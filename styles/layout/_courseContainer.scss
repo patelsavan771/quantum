@@ -9,7 +9,7 @@
     display: grid;
     grid-gap: 24px;
     grid-template-columns: 476px 476px;
-    grid-auto-rows: 250px;
+    grid-auto-rows: 246px;
     .course-card {
         display: flex;
         flex-wrap: wrap;
@@ -17,11 +17,7 @@
         background-color: white;
         padding: 24px 24px 0px;
         box-sizing: border-box;
-
-        .card-title {
-            display: flex;
-            justify-content: space-between;
-        }
+        min-height: 246px;
         
         .course-img {
             flex: 1;
@@ -30,10 +26,20 @@
         .course-body {
             flex: 2;
             margin-left: 16px;
-            h3 {
-                font-size: 16px;
+            .card-title {
+                display: flex;
+                justify-content: space-between;   
+                overflow: hidden;
                 .fav-span {
                     float: right;
+                    margin: 0;
+                    top: 0;
+                    right: 0;
+                }
+                h3 {
+                    font-size: 16px;
+                    max-height: 42px;
+                    margin: 0;
                 }
             }
             p {
@@ -46,11 +52,14 @@
                 color: #1F7A54;
             }
             #course-card-select {
+                font-family: 'Quicksand';
                 font-size: 16px;
                 margin-top: 16px;
+                padding-bottom: 5px;
             }
         }
         .course-card-footer {
+            // margin-top: 5px;
             display: flex;
             justify-content: space-between;
             width: 100%;
@@ -70,6 +79,15 @@
     font-size: 12px;
     margin-bottom: 8px;
     color: $gray33;
+}
+
+.multine-ellipsis {
+    -webkit-box-orient: vertical;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 

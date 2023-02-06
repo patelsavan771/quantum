@@ -1,4 +1,5 @@
 @import '../abstracts/mixins';
+@import '../abstracts/variables';
 
 .header {
     @include flex(space-between, center);
@@ -32,8 +33,29 @@ nav {
 .fixed-nav-items {
     display: flex;
     a {
+        display: inline-block;
         padding: 19px 16px;
+        text-decoration: none;
+        color: #FFFFFF;
+        position: relative;
+        img {
+            width: 24px;
+        }
+        .nav-badge {
+            height: 21px;
+            margin: 0;
+            background-color: $blueBadge;
+            position: absolute;
+            right: 8px;
+            top: 7px;
+            padding: 1px 5px;
+            border-radius: 50%;
+            line-height: 21px;
+            box-sizing: border-box;
+            vertical-align: middle;
+        }
     }
+    align-items: center;
 }
 
 li a {
@@ -53,4 +75,19 @@ li a {
 a.active {
     color: #FFFFFF;
     border-bottom: 4px solid #FFFFFF;
+}
+
+#profile-icon {
+    width: 32px;
+}
+
+#profile-badge {
+    background-color: $white;
+    color: $gray22;
+    font-size: 10px;
+    padding: 1px 7px;
+}
+
+#announce-badge {
+    padding: 1px 7px;
 }

@@ -6,13 +6,16 @@
     height: 28px;
     .sortby-func {
         display: flex;
-        float: right;
         #sortby-select {
+            display: inline-block;
             background-color: #EEEEEE;
             height: 20px;
             padding: 0;
+            padding-bottom: 4px;
             font-size: 16px;
             color: #333333;
+            font-family: 'Quicksand';
+            box-sizing: content-box;
         }
         #sort-icon {
             margin-left: 24px;

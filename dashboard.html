@@ -7,12 +7,12 @@
     <title>Dashboard-Quantum</title>
     <link
       rel="preload"
-      href="/quantum-screen-assets/Quicksand-font/Quicksand-VariableFont_wght.ttf"
+      href="./quantum-screen-assets/Quicksand-font/Quicksand-VariableFont_wght.ttf"
       as="font"
       type="font/ttf"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./styles/dashboard.css" />
   </head>
   <body>
     <div class="body-container">
@@ -24,8 +24,7 @@
         />
 
         <nav>
-
-            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+          <input type="checkbox" id="nav-toggle" class="nav-toggle" />
 
           <ul class="res-navbar">
             <li><a href="#" class="active"> DASHBOARD</a></li>
@@ -34,27 +33,38 @@
             <li><a href="#"> REPORTS</a></li>
             <li><a href="#"> ADMIN</a></li>
           </ul>
-              
-
 
           <div class="fixed-nav-items">
-            <a href="#"
-              ><img src="./quantum-screen-assets/icons/alerts.svg" alt=""
-            /></a>
-            <a href="#"
-              ><img src="./quantum-screen-assets/icons/announcements.svg" alt=""
-            /></a>
+            <div>
+              <a href="#"
+                ><img src="./quantum-screen-assets/icons/alerts.svg" alt="" />
+                <span class="nav-badge"> 2 </span>
+              </a>
+            </div>
             <a href="#"
               ><img
+                src="./quantum-screen-assets/icons/announcements.svg"
+                alt=""
+              />
+              <span class="nav-badge" id="announce-badge"> 1 </span>
+            </a>
+            <a href="#"
+              ><img
+                id="profile-icon"
                 src="./quantum-screen-assets/icons/account_circle.svg"
                 alt=""
-            /></a>
+              />
+              <span class="nav-badge" id="profile-badge"> T </span>
+            </a>
           </div>
           <label for="nav-toggle" class="nav-toggle-label">
             <span>
-                <img src="./quantum-screen-assets/icons/hamburger-menu.svg" alt="">
+              <img
+                src="./quantum-screen-assets/icons/hamburger-menu.svg"
+                alt=""
+              />
             </span>
-        </label>  
+          </label>
         </nav>
       </div>
 
@@ -81,8 +91,8 @@
           <small> showing 4 of 4 </small>
 
           <div class="sortby-func">
-            <small>Sort&nbsp;By:</small
-            ><select id="sortby-select" name="sortby" id="sortby">
+            <small>Sort&nbsp;By:</small>
+            <select id="sortby-select" name="sortby" id="sortby">
               <option value="courseName">Course Name</option>
               <option value="courseName">Course Duration</option>
               <option value="courseName">Course Purchase</option></select
@@ -100,18 +110,24 @@
             <!-- Acceleration -->
             <div class="course-card">
               <div class="card-img">
-                <img src="./quantum-screen-assets/images/imageMask.png" alt="" />
+                <img
+                  src="./quantum-screen-assets/images/imageMask.png"
+                  alt=""
+                />
               </div>
               <div class="course-body">
-                <h3 class="course-card-text-mp card-title">
-                  Acceleration
+
+                <div class="course-card-text-mp card-title">
+                  <h3 class="multine-ellipsis">
+                    Acceleration
+                  </h3>
                   <span class="fav-span"
                     ><img
                       src="./quantum-screen-assets/icons/favourite.svg"
                       alt=""
                     />
                   </span>
-                </h3>
+                </div>
                 <p class="course-card-text-mp">
                   Physics | Grade 7 <span class="green-span">+2</span>
                 </p>
@@ -161,15 +177,18 @@
                 />
               </div>
               <div class="course-body">
-                <h3 class="course-card-text-mp">
-                  Displacement, Velocity and Speed
+
+                <div class="course-card-text-mp card-title">
+                  <h3 class="multine-ellipsis">
+                    Displacement, Velocity and Speed
+                  </h3>
                   <span class="fav-span"
                     ><img
                       src="./quantum-screen-assets/icons/favourite.svg"
                       alt=""
                     />
                   </span>
-                </h3>
+                </div>
                 <p class="course-card-text-mp">
                   Physics | Grade 6 <span class="green-span">+3</span>
                 </p>
@@ -219,16 +238,18 @@
                 />
               </div>
               <div class="course-body">
-                <h3 class="course-card-text-mp">
-                  Introduction to Biology: Micro organisms and how they affect
-                  the other Life Systems in En...
+                <div class="course-card-text-mp card-title">
+                  <h3 class="multine-ellipsis">
+                    Introduction to Biology: Micro organisms and how they affect
+                    the other Life Systems in En...
+                  </h3>
                   <span class="fav-span"
                     ><img
                       src="./quantum-screen-assets/icons/favourite.svg"
                       alt=""
                     />
                   </span>
-                </h3>
+                </div>
                 <p class="course-card-text-mp">
                   Biology | Grade 4 <span class="green-span">+1</span>
                 </p>
@@ -278,15 +299,18 @@
                 />
               </div>
               <div class="course-body">
-                <h3 class="course-card-text-mp">
-                  Introduction to High School Mathematics
+
+                <div class="course-card-text-mp card-title">
+                  <h3 class="multine-ellipsis">
+                    Introduction to High School Mathematics
+                  </h3>
                   <span class="fav-span"
                     ><img
                       src="./quantum-screen-assets/icons/favourite.svg"
                       alt=""
                     />
                   </span>
-                </h3>
+                </div>
                 <p class="course-card-text-mp">
                   Mathematics | Grade 8 <span class="green-span">+3</span>
                 </p>

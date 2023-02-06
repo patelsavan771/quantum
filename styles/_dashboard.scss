@@ -1,0 +1,93 @@
+@import './layout/header';
+@import './layout/dashboardNavbar';
+@import './layout/sortFunc';
+
+@import './layout/courseContainer';
+
+// @import './layout/container';
+@import './layout/footer';
+
+body {
+    font-family: 'Quicksand';
+    margin: 0;
+    box-sizing: border-box;
+}
+
+select {
+    width: 100%;
+    padding: 5px 0px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid $formInputColor;
+    color: $formInputColor;
+    
+}
+
+
+.container {
+    display: block;
+    padding: 0 24px;
+}
+
+.nav-toggle {
+    margin: 24px 0px;
+    background-color: #8DDC97;
+    display: flex;
+    box-sizing: border-box;
+    .active {
+        border-bottom: 4px solid #222222;
+    }
+}
+
+.nav-toggle-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    img {
+        width: 32px;
+    }
+    .bold-num {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .res-navbar {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #25313F;
+        // width: 100%;
+        text-align: center;
+        display: none;
+        ul {
+            margin-block-start: 0;
+        }
+    }
+    
+    .nav-toggle-label {
+        cursor: pointer;
+        display: block;
+    }
+
+    .nav-toggle:checked + .res-navbar {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .course-container {
+        display: grid;
+        grid-gap: 24px;
+        grid-template-columns: 571px;
+        grid-auto-rows: 250px;
+    }
+  }

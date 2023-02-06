@@ -1,0 +1,23 @@
+@import '../abstracts/mixins';
+
+.other-func {
+    @include flex(space-between, center);
+    margin-bottom: 17px;
+    height: 28px;
+    .sortby-func {
+        display: flex;
+        float: right;
+        #sortby-select {
+            background-color: #EEEEEE;
+            height: 20px;
+            padding: 0;
+            font-size: 16px;
+            color: #333333;
+        }
+        #sort-icon {
+            margin-left: 24px;
+        }
+    }
+}
+
+

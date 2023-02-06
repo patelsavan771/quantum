@@ -13,6 +13,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/dashboard.css" />
+
+    <!-- for Museo Sans 500 fonts -->
+    <!-- <link href="https://www.dafontfree.net/embed/bXVzZW8tc2Fucy01MDAmZGF0YS80MS9tLzk1MDcyL011c2VvU2Fuc181MDAub3Rm" rel="stylesheet" type="text/css"/> -->
   </head>
   <body>
     <div class="body-container">
@@ -27,11 +30,11 @@
           <input type="checkbox" id="nav-toggle" class="nav-toggle" />
 
           <ul class="res-navbar">
-            <li><a href="#" class="active"> DASHBOARD</a></li>
-            <li><a href="#"> CONTENT</a></li>
-            <li><a href="#"> USERS</a></li>
-            <li><a href="#"> REPORTS</a></li>
-            <li><a href="#"> ADMIN</a></li>
+            <li><a href="#dashboard" class="active">DASHBOARD</a></li>
+            <li><a href="#content">CONTENT</a></li>
+            <li><a href="#users">USERS</a></li>
+            <li><a href="#reports">REPORTS</a></li>
+            <li><a href="#admin">ADMIN</a></li>
           </ul>
 
           <div class="fixed-nav-items">
@@ -72,18 +75,18 @@
 
       <div class="container">
         <div class="nav-toggle">
-          <div class="nav-toggle-item active">
+          <button class="nav-toggle-item active">
             <img
               src="./quantum-screen-assets/icons/courses.svg"
               alt="courses icon"
             />&nbsp; <span class="bold-num">4</span>&nbsp;Courses
-          </div>
-          <div class="nav-toggle-item">
+          </button>
+          <button class="nav-toggle-item">
             <img
               src="./quantum-screen-assets/icons/classes.svg"
               alt="courses icon"
             />&nbsp; <span class="bold-num">4</span>&nbsp;Classes
-          </div>
+          </button>
         </div>
 
         <!-- sortby-functionality -->
@@ -107,253 +110,7 @@
 
         <div class="flex-container">
           <div class="course-container">
-            <!-- Acceleration -->
-            <div class="course-card">
-              <div class="card-img">
-                <img
-                  src="./quantum-screen-assets/images/imageMask.png"
-                  alt=""
-                />
-              </div>
-              <div class="course-body">
-                <div class="course-card-text-mp card-title">
-                  <h3 class="multine-ellipsis" title="Acceleration">
-                    Acceleration
-                  </h3>
-                  <span class="fav-span"
-                    ><img
-                      src="./quantum-screen-assets/icons/favourite.svg"
-                      alt=""
-                    />
-                  </span>
-                </div>
-                <p class="course-card-text-mp">
-                  Physics | Grade 7 <span class="green-span">+2</span>
-                </p>
-                <p class="course-card-text-mp">
-                  <span><strong> 4 </strong> Units </span>
-                  <span><strong> 18 </strong> Lessons </span>
-                  <span><strong> 24 </strong> Topics</span>
-                </p>
-
-                <select
-                  id="course-card-select"
-                  class="course-card-text-mp"
-                  name="classes"
-                  id="classes"
-                >
-                  <option value="courseName">Mr. Frank's Class B</option>
-                  <option value="courseName">Mr. Frank's Class B</option>
-                  <option value="courseName">Mr. Frank's Class B</option>
-                </select>
-
-                <p class="course-card-text-mp">
-                  <span>50 Students</span>
-                  <span>21-Jan-2020 - 21-Aug-2020</span>
-                </p>
-              </div>
-
-              <div class="course-card-footer">
-                <img
-                  src="./quantum-screen-assets/icons/preview.svg"
-                  alt=""
-                /><img
-                  src="./quantum-screen-assets/icons/manage course.svg"
-                  alt=""
-                /><img
-                  src="./quantum-screen-assets/icons/grade submissions.svg"
-                  alt=""
-                /><img src="./quantum-screen-assets/icons/reports.svg" alt="" />
-              </div>
-            </div>
-
-            <!-- Displacement, Velocity and Speed  -->
-            <div class="course-card">
-              <div class="card-img">
-                <img
-                  src="./quantum-screen-assets/images/imageMask-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="course-body">
-                <div class="course-card-text-mp card-title">
-                  <h3
-                    class="multine-ellipsis"
-                    title="Displacement, Velocity and Speed"
-                  >
-                    Displacement, Velocity and Speed
-                  </h3>
-                  <span class="fav-span"
-                    ><img
-                      src="./quantum-screen-assets/icons/favourite.svg"
-                      alt=""
-                    />
-                  </span>
-                </div>
-                <p class="course-card-text-mp">
-                  Physics | Grade 6 <span class="green-span">+3</span>
-                </p>
-                <p class="course-card-text-mp">
-                  <span><strong> 2 </strong> Units </span>
-                  <span><strong> 15 </strong> Lessons </span>
-                  <span><strong> 20 </strong> Topics</span>
-                </p>
-
-                <select
-                  id="course-card-select"
-                  class="course-card-text-mp"
-                  name="classes"
-                  id="classes"
-                >
-                  <option value="courseName">Mr. Frank's Class B</option>
-                  <option value="courseName">Mr. Frank's Class B</option>
-                  <option value="courseName">Mr. Frank's Class B</option>
-                </select>
-
-                <p class="course-card-text-mp">
-                  <span>50 Students</span>
-                  <span>21-Jan-2020 - 21-Aug-2020</span>
-                </p>
-              </div>
-
-              <div class="course-card-footer">
-                <img
-                  src="./quantum-screen-assets/icons/preview.svg"
-                  alt=""
-                /><img
-                  src="./quantum-screen-assets/icons/manage course.svg"
-                  alt=""
-                /><img
-                  src="./quantum-screen-assets/icons/grade submissions.svg"
-                  alt=""
-                /><img src="./quantum-screen-assets/icons/reports.svg" alt="" />
-              </div>
-            </div>
-
-            <!-- Introduction to Biology: Micro organisms and how they affect the other Life Systems in En... -->
-            <div class="course-card">
-              <div class="card-img">
-                <img
-                  src="./quantum-screen-assets/images/imageMask-3.png"
-                  alt=""
-                />
-              </div>
-              <div class="course-body">
-                <div class="course-card-text-mp card-title">
-                  <h3
-                    class="multine-ellipsis"
-                    title=" Introduction to Biology: Micro organisms and how they affect
-                  the other Life Systems in English"
-                  >
-                    Introduction to Biology: Micro organisms and how they affect
-                    the other Life Systems in English
-                  </h3>
-                  <span class="fav-span"
-                    ><img
-                      src="./quantum-screen-assets/icons/favourite.svg"
-                      alt=""
-                    />
-                  </span>
-                </div>
-                <p class="course-card-text-mp">
-                  Biology | Grade 4 <span class="green-span">+1</span>
-                </p>
-                <p class="course-card-text-mp">
-                  <span><strong> 2 </strong> Units </span>
-                  <span><strong> 16 </strong> Lessons </span>
-                  <span><strong> 22 </strong> Topics</span>
-                </p>
-
-                <select
-                  id="course-card-select"
-                  class="course-card-text-mp"
-                  name="classes"
-                  id="classes"
-                >
-                  <option value="courseName">Mr. Frank's Class B</option>
-                  <option value="courseName">Mr. Frank's Class B</option>
-                  <option value="courseName">Mr. Frank's Class B</option>
-                </select>
-
-                <p class="course-card-text-mp">
-                  <span>300 Students</span>
-                  <span>21-Jan-2020 - 21-Aug-2020</span>
-                </p>
-              </div>
-
-              <div class="course-card-footer">
-                <img
-                  src="./quantum-screen-assets/icons/preview.svg"
-                  alt=""
-                /><img
-                  src="./quantum-screen-assets/icons/manage course.svg"
-                  alt=""
-                /><img
-                  src="./quantum-screen-assets/icons/grade submissions.svg"
-                  alt=""
-                /><img src="./quantum-screen-assets/icons/reports.svg" alt="" />
-              </div>
-            </div>
-
-            <!-- Introduction to High School Mathematics -->
-            <div class="course-card">
-              <div class="card-img">
-                <img
-                  src="./quantum-screen-assets/images/imageMask-2.png"
-                  alt=""
-                />
-              </div>
-              <div class="course-body">
-                <div class="course-card-text-mp card-title">
-                  <h3 class="multine-ellipsis"  title="Introduction to High School Mathematics">
-                    Introduction to High School Mathematics
-                  </h3>
-                  <span class="fav-span"
-                    ><img
-                      src="./quantum-screen-assets/icons/favourite.svg"
-                      alt=""
-                    />
-                  </span>
-                </div>
-                <p class="course-card-text-mp">
-                  Mathematics | Grade 8 <span class="green-span">+3</span>
-                </p>
-                <p class="course-card-text-mp">
-                  <span><strong> 4 </strong> Units </span>
-                  <span><strong> 18 </strong> Lessons </span>
-                  <span><strong> 24 </strong> Topics</span>
-                </p>
-
-                <select
-                  id="course-card-select"
-                  class="course-card-text-mp"
-                  name="classes"
-                  id="classes"
-                >
-                  <option value="courseName">Mr. Frank's Class B</option>
-                  <option value="courseName">Mr. Frank's Class B</option>
-                  <option value="courseName">Mr. Frank's Class B</option>
-                </select>
-
-                <p class="course-card-text-mp">
-                  <span>44 Students</span>
-                  <span>21-Jan-2020 - 21-Aug-2020</span>
-                </p>
-              </div>
-
-              <div class="course-card-footer">
-                <img
-                  src="./quantum-screen-assets/icons/preview.svg"
-                  alt=""
-                /><img
-                  src="./quantum-screen-assets/icons/manage course.svg"
-                  alt=""
-                /><img
-                  src="./quantum-screen-assets/icons/grade submissions.svg"
-                  alt=""
-                /><img src="./quantum-screen-assets/icons/reports.svg" alt="" />
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -375,5 +132,7 @@
         </div>
       </div>
     </div>
+
+    <script type="module" src="/scripts/index.js"></script>
   </body>
 </html>

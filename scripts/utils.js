@@ -9,8 +9,8 @@ export const generateCard = (course) => {
     </div>
     <div class="course-body">
       <div class="course-card-text-mp card-title">
-        <h3 class="multine-ellipsis" title="${course.name}">
-          ${course.name}
+        <h3 class="multine-ellipsis" title="${course.title}">
+          ${course.title}
         </h3>
         <span class="fav-span ${!course.isFavourite ? 'not-fav':''}"
           ><img
@@ -43,7 +43,7 @@ export const generateCard = (course) => {
 
       <p class="course-card-text-mp">
         ${!course.students ? '' : `<span>${course.students} Students</span>`}
-        ${!course.startDate ? '' : `<span>${course.startDate} - ${course.endDate}</span>`}
+        ${!course.duration ? '' : `<span>${course.duration.startDate} - ${course.duration.endDate}</span>`}
         
       </p>
     </div> ${footerTemplate}`;

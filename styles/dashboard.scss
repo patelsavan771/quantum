@@ -24,7 +24,8 @@ select {
     border: none;
     border-bottom: 2px solid $formInputColor;
     color: $formInputColor;
-    
+    background: url('../quantum-screen-assets/icons/arrow-down.svg') no-repeat right;
+    appearance: none;
 }
 
 

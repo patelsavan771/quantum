@@ -18,8 +18,7 @@ body {
 .header {
   height: 40px;
   border-bottom: 3px solid #31B9E4;
-  background-image: url("../quantum-screen-assets/header pattern image.png");
-  background-color: #1f2934;
+  background-color: #25313F;
   padding: 10px 15px;
 }
 .header .header-img {
@@ -109,6 +108,7 @@ a.active {
 
 #profile-icon {
   width: 32px;
+  border-radius: 50%;
 }
 
 #profile-badge {
@@ -131,6 +131,7 @@ a.active {
 }
 .other-func .sortby-func {
   display: flex;
+  align-items: center;
 }
 .other-func .sortby-func #sortby-select {
   display: inline-block;
@@ -161,6 +162,7 @@ a.active {
   grid-auto-rows: 246px;
 }
 .course-container .course-card {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   border-radius: 2px;
@@ -168,6 +170,18 @@ a.active {
   padding: 24px 24px 0px;
   box-sizing: border-box;
   min-height: 246px;
+}
+.course-container .course-card .expired {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: uppercase;
+  color: #D80000;
+  background-color: #FFE4E6;
+  padding: 4px 7px 2px 5px;
+  font-size: 10px;
+  font-family: "museo-sans-500", sans-serif;
+  border-radius: 2px;
 }
 .course-container .course-card .course-img {
   flex: 1;
@@ -181,12 +195,17 @@ a.active {
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  color: #222222;
 }
 .course-container .course-card .course-body .card-title .fav-span {
   float: right;
   margin: 0;
   top: 0;
   right: 0;
+}
+.course-container .course-card .course-body .card-title .not-fav {
+  opacity: 0.2;
+  filter: opacity(0.5) drop-shadow(0 0 0 blue);
 }
 .course-container .course-card .course-body .card-title h3 {
   font-size: 16px;
@@ -205,8 +224,9 @@ a.active {
 .course-container .course-card .course-body #course-card-select {
   font-family: "Quicksand";
   font-size: 16px;
-  margin-top: 16px;
+  margin-top: 14px;
   padding-bottom: 5px;
+  color: #222222;
 }
 .course-container .course-card .course-card-footer {
   display: flex;
@@ -219,13 +239,29 @@ a.active {
 .course-container .course-card .course-card-footer img {
   height: 24px;
 }
+.course-container .course-card .course-card-footer .card-footer-btn {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.course-container .course-card .course-card-footer .card-footer-btn:hover {
+  opacity: 0.7;
+}
+.course-container .course-card .course-card-footer .card-footer-btn .btn-img-18-20 {
+  width: 18px;
+  height: 20px;
+}
+.course-container .course-card .course-card-footer .card-footer-btn .disbled-btn {
+  opacity: 0.4;
+}
 
 .course-card-text-mp {
   padding: 0;
   margin: 0;
   font-size: 12px;
   margin-bottom: 8px;
-  color: #333333;
+  color: #666666;
 }
 
 .multine-ellipsis {
@@ -281,6 +317,10 @@ select {
   border: none;
   border-bottom: 2px solid #666666;
   color: #666666;
+  background: url("../quantum-screen-assets/icons/arrow-down.svg") no-repeat right;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .container {
@@ -302,9 +342,11 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: none;
+  border: none;
+  font-family: inherit;
   width: 50%;
   padding: 20px;
-  text-align: center;
 }
 .nav-toggle-item img {
   width: 32px;
@@ -312,6 +354,10 @@ select {
 .nav-toggle-item .bold-num {
   font-size: 24px;
   font-weight: bold;
+}
+.nav-toggle-item:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 @media (max-width: 1024px) {
@@ -335,6 +381,7 @@ select {
   }
   .nav-toggle:checked + .res-navbar {
     display: block;
+    z-index: 5;
     margin: 0;
     padding: 0;
   }

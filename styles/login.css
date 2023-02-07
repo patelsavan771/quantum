@@ -18,8 +18,7 @@ body {
 .header {
   height: 40px;
   border-bottom: 3px solid #31B9E4;
-  background-image: url("../quantum-screen-assets/header pattern image.png");
-  background-color: #1f2934;
+  background-color: #25313F;
   padding: 10px 15px;
 }
 .header .header-img {

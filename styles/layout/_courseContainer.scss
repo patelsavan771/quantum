@@ -11,6 +11,19 @@
     grid-template-columns: 476px 476px;
     grid-auto-rows: 246px;
     .course-card {
+        .expired{
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-transform: uppercase;
+            color: $expiredSpanColor;
+            background-color: $expiredSpanBg;
+            padding: 4px 7px 2px 5px;
+            font-size: 10px;
+            font-family: 'museo-sans-500', sans-serif;
+            border-radius: 2px;
+        }
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         border-radius: 2px;
@@ -30,11 +43,16 @@
                 display: flex;
                 justify-content: space-between;   
                 overflow: hidden;
+                color: $gray22;
                 .fav-span {
                     float: right;
                     margin: 0;
                     top: 0;
                     right: 0;
+                }
+                .not-fav {
+                    opacity: 0.2;
+                    filter: opacity(0.5) drop-shadow(0 0 0 blue);
                 }
                 h3 {
                     font-size: 16px;
@@ -54,8 +72,9 @@
             #course-card-select {
                 font-family: 'Quicksand';
                 font-size: 16px;
-                margin-top: 16px;
+                margin-top: 14px;
                 padding-bottom: 5px;
+                color: $gray22;
             }
         }
         .course-card-footer {
@@ -69,6 +88,24 @@
             img {
                 height: 24px;
             }
+
+            .card-footer-btn {
+                margin: 0;
+                padding: 0;
+                border: none;
+                background:none;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+                .btn-img-18-20 {
+                    width: 18px;
+                    height: 20px;
+                }
+                .disbled-btn {
+                    opacity: 0.4;
+                }
+            }
         }
     }
 }
@@ -78,7 +115,7 @@
     margin: 0;
     font-size: 12px;
     margin-bottom: 8px;
-    color: $gray33;
+    color: $gray66;
 }
 
 .multine-ellipsis {

@@ -1,8 +1,8 @@
 @import '../abstracts/variables';
 .header {
     height: 40px;
-    border-bottom: 3px solid #31B9E4;
-    background-image: url("../quantum-screen-assets/header\ pattern\ image.png");
+    border-bottom: none;
+    // background: $headerBgColor url("../quantum-screen-assets/header\ pattern\ image.png");
     background-color: $headerBgColor;
     padding: 10px 15px;
     .header-img {

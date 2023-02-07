@@ -4,7 +4,6 @@
 .header {
     @include flex(space-between, center);
     flex-wrap: nowrap;
-    border: none;
 }
 nav {
     @include flex(space-between, center);
@@ -47,7 +46,7 @@ nav {
             background-color: $blueBadge;
             position: absolute;
             right: 8px;
-            top: 7px;
+            top: 11px;
             padding: 1px 5px;
             border-radius: 50%;
             line-height: 21px;
@@ -79,6 +78,7 @@ a.active {
 
 #profile-icon {
     width: 32px;
+    border-radius: 50%;
 }
 
 #profile-badge {

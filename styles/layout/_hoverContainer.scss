@@ -1,0 +1,102 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+//below code must be removed for dav purpose only.
+
+// #alert-container {
+//     display: block;
+// }
+
+
+.fixed-nav-item {
+    position: relative;
+    transition: all 1s;
+}
+
+.hover-container {
+    // transition: display 2s ease-out 100ms;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    // display: none;  //block
+    box-sizing: border-box;
+    position: absolute;
+    background-color: $white;
+    color: $gray22;
+    border-radius: 0px 0px 2px 2px;
+    top:63px;
+    right: 5px;
+    width: 315px;
+    max-height: 582px;
+    overflow-y: scroll;
+    overflow-x: visible;
+    .hover-card {
+        box-sizing: border-box;
+        padding: 16px;
+        border-bottom: 1px solid $gray221F;
+        .title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 4px;
+            span.pa-block {
+                font-size: 12px;
+                display: block;
+                margin-bottom: 8px;
+                font-weight: 500;
+                span.pa {
+                    color: $gray6E;
+                }
+            }
+            h3 {
+                font-size: 14px;
+                margin: 0;
+                padding: 0;
+            }
+            .icon {
+                font-size: 18px;
+                color: $greenishColor;
+                margin-left: 8px;
+            }
+        }
+        .course-info {
+            font-size: 12px;
+            margin: 8px 0px;
+            span {
+                color: $gray6E;
+            }
+        }
+        .file-and-time {
+            @include flex(space-between,center);
+            font-size: 12px;
+            color: $gray6E;
+            .file {
+                align-content: center;
+                span {
+                    font-size: 13px;
+                    vertical-align: sub;
+                    margin-bottom: 1px;
+                }
+            }
+        }
+    }
+
+    .fixed-container-footer {
+        box-sizing: border-box;
+        color: $greenishColor;
+        font-size: 14px;
+        display: block;
+        position: sticky;
+        bottom: 0;
+        right: 0;
+        height: 48px;
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $white;
+        width: 100%;
+        box-shadow: 0px 1px 6px #0000003D;
+        cursor: pointer;
+        border: none;
+    }
+}

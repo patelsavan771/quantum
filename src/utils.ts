@@ -1,4 +1,5 @@
-export const generateCard = (course) => {
+import {Course} from './interfaces';
+export const generateCard = (course: Course): string => {
     return `
     ${course.isExpired ? expiredSpan : ''}
     <div class="card-img">
@@ -12,7 +13,7 @@ export const generateCard = (course) => {
         <h3 class="multine-ellipsis" title="${course.title}">
           ${course.title}
         </h3>
-        <span class="fav-span ${!course.isFavourite ? 'not-fav' : ''}"
+        <span class="fav-span ${!course.isFavourite ? 'not-fav':''}"
           ><img
             src="./quantum-screen-assets/icons/favourite.svg"
             alt=""
@@ -26,7 +27,7 @@ export const generateCard = (course) => {
       <span><strong> ${course.curriculum.units} </strong> Units </span>
       <span><strong> ${course.curriculum.lessons} </strong> Lessons </span>
       <span><strong> ${course.curriculum.topics} </strong> Topics</span>
-    </p>`}
+    </p>` }
       
 
       <select
@@ -37,8 +38,8 @@ export const generateCard = (course) => {
         placeholder="No Classes"
       >
         ${course.classes ? course.classes.map((ele) => {
-        return `<option value="${ele}">${ele}</option>`;
-    }) : '<option value="0" disabled selected hidden>No Classes</option>'}
+          return `<option value="${ele}">${ele}</option>`;
+        }) : '<option value="0" disabled selected hidden>No Classes</option>'}
       </select>
 
       <p class="course-card-text-mp">
@@ -47,9 +48,12 @@ export const generateCard = (course) => {
         
       </p>
     </div> ${footerTemplate}`;
-};
-const expiredSpan = `<span class="expired">expired</span>`;
-const footerTemplate = `<div class="course-card-footer">
+}
+
+
+const expiredSpan: string = `<span class="expired">expired</span>`;
+
+const footerTemplate: string = `<div class="course-card-footer">
 <button class="card-footer-btn">
   <img
   src="./quantum-screen-assets/icons/preview.svg"

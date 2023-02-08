@@ -114,12 +114,16 @@ select {
         display: block;
     }
 
-    .nav-toggle:checked+.res-navbar {
-        display: block;
-        z-index: 5;
-        margin: 0;
-        padding: 0;
+    #hamburger-menu-div {
+        display: initial;
     }
+
+    // .nav-toggle:checked+.res-navbar {
+    //     display: block;
+    //     z-index: 5;
+    //     margin: 0;
+    //     padding: 0;
+    // }
 
     .course-container {
         display: grid;

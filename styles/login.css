@@ -7,12 +7,33 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   box-sizing: border-box;
 }
 
 *:focus {
   outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2196078431);
+  border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2823529412);
 }
 
 .header {

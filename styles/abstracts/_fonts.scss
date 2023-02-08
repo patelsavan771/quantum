@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Quicksand';
-    src: url('../quantum-screen-assets/Quicksand-font/Quicksand-VariableFont_wght.ttf');
+    font-family: "Quicksand";
+    src: url("../quantum-screen-assets/Quicksand-font/Quicksand-VariableFont_wght.ttf");
 }
 
 body {
@@ -8,10 +8,31 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
     box-sizing: border-box;
 }
 
 *:focus {
     outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #00000038;
+    border-radius: 6px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #00000048;
 }

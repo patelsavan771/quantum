@@ -40,9 +40,9 @@
           </ul>
 
           <div class="fixed-nav-items">
-            <div class="fixed-nav-item">
+            <div class="fixed-nav-item" id="alert-id">
               <a href="#" 
-                ><img src="./quantum-screen-assets/icons/alerts.svg" alt="" />
+                ><img id="alert-icon" src="./quantum-screen-assets/icons/alerts.svg" alt="" />
                 <span class="nav-badge" id="alert-badge"> 2 </span>
               </a>
               <div id="alert-container" class="hover-container">
@@ -198,9 +198,9 @@
               </div>
             </div>
 
-            <div class="fixed-nav-item">
-              <a href="#"
-                ><img
+            <div class="fixed-nav-item" id="announcement-id">
+              <a href="#" 
+                ><img id="announcement-icon"
                   src="./quantum-screen-assets/icons/announcements.svg"
                   alt=""
                 />
@@ -368,11 +368,11 @@
               </a>
             </div>
             <!-- for hamburger -->
-            <div class="fixed-nav-item">
-              <a href="#" id="hamburger-menu-div">
+            <div class="fixed-nav-item"  id="hamburger-menu-div">
+              <a href="#" id="hamburger-menu">
                 <label for="nav-toggle" class="nav-toggle-label">
                   <span>
-                    <img
+                    <img id="hamburger-icon"
                       src="./quantum-screen-assets/icons/hamburger-menu.svg"
                       alt=""
                     />
@@ -397,7 +397,6 @@
                     <div class="sub-menu">
                       <ul>
                         <li><a href="">submenu 1</a></li>
-                        <li><a href="">submenu 2</a></li>
                       </ul>
                     </div>
                   </li>
@@ -415,7 +414,6 @@
                     <div class="sub-menu">
                       <ul>
                         <li><a href="">submenu 1</a></li>
-                        <li><a href="">submenu 2</a></li>
                       </ul>
                     </div>
                   </li>
@@ -522,6 +520,7 @@
       </div>
     </div>
 
+    <script type="module" src="/scripts/hoverFunc.js"></script>
     <script type="module" src="/scripts/index.js"></script>
   </body>
 </html>

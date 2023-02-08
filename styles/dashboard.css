@@ -172,6 +172,10 @@ a.active {
   display: none;
 }
 
+#hamburger-icon {
+  width: 28px;
+}
+
 #hamburger-container {
   box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
   height: auto;
@@ -182,12 +186,12 @@ a.active {
 }
 #hamburger-container #new-res-navbar-id {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   background-color: #FFFFFF;
   -webkit-margin-before: 0;
           margin-block-start: 0;
   list-style: none;
-  padding: 0;
 }
 #hamburger-container #new-res-navbar-id li:hover {
   color: #1F7A54;
@@ -207,6 +211,7 @@ a.active {
 #hamburger-container #new-res-navbar-id .dropdown-btn {
   display: flex;
   justify-content: space-between;
+  align-items: initial;
   line-height: 18px;
 }
 #hamburger-container #new-res-navbar-id .dropdown-btn .dropdown-btn-icon {
@@ -227,6 +232,9 @@ a.active {
   text-transform: uppercase;
   padding-left: 32px;
 }
+#hamburger-container #new-res-navbar-id .sub-menu ul li:hover {
+  text-decoration: underline;
+}
 
 .fixed-nav-item {
   position: relative;
@@ -235,6 +243,7 @@ a.active {
 
 .hover-container {
   transition: opacity 0.5s ease-out;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   opacity: 0;
   visibility: hidden;
   z-index: 10;
@@ -258,6 +267,7 @@ a.active {
 .hover-container .hover-card .title {
   display: flex;
   justify-content: space-between;
+  align-items: initial;
   margin-bottom: 4px;
 }
 .hover-container .hover-card .title span.pa-block {
@@ -334,6 +344,9 @@ a.active {
   text-align: center;
   text-transform: uppercase;
   background-color: #FFFFFF;
+}
+.hover-container .fixed-container-footer button:hover {
+  text-decoration: underline;
 }
 .hover-container .fixed-container-footer span {
   font-size: 30px;

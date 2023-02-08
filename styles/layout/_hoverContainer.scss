@@ -2,7 +2,6 @@
 @import '../abstracts/variables';
 
 //below code must be removed for dav purpose only.
-
 // #announcements-container {
 //     display: block;
 //     visibility: visible;
@@ -13,8 +12,12 @@
     display: none;
 }
 
+#hamburger-icon {
+    width: 28px;
+}
+
 #hamburger-container {
-    box-shadow: 0px 13px 20px #0000003D;
+    box-shadow: 0px 13px 20px $hamburgerBoxShadow;
     height: auto;
     overflow: hidden;
     width: 280px;
@@ -22,11 +25,11 @@
     box-sizing: border-box;
     #new-res-navbar-id {
         margin: 0;
+        padding: 0;
         box-sizing: border-box;
         background-color: $white;
         margin-block-start: 0;
         list-style: none;
-        padding: 0;
         li:hover {
             color: $greenishColor;
             background-color: $grayF3;
@@ -47,8 +50,7 @@
             
         }
         .dropdown-btn {
-            display: flex;
-            justify-content: space-between;
+            @include flex(space-between, initial);
             line-height: 18px;
             .dropdown-btn-icon {
                 font-size: 24px;
@@ -62,12 +64,15 @@
                 list-style: none;
                 margin-block-start: 0;
                 padding-left: 0;
-
                 li a {
                     text-transform: uppercase;
                     padding-left: 32px;
                 }
+                li:hover {
+                    text-decoration: underline;
+                }
             }
+
         }
     }
 }
@@ -80,6 +85,7 @@
 .hover-container {
     // transition: display 2s ease-out 100ms;
     transition: opacity 0.5s ease-out;
+    box-shadow: 0px 3px 6px $hoverBoxShadow;
     opacity: 0;
     visibility: hidden;
     z-index: 10;
@@ -100,8 +106,7 @@
         padding: 16px;
         border-bottom: 1px solid $gray221F;
         .title {
-            display: flex;
-            justify-content: space-between;
+            @include  flex(space-between, initial);
             margin-bottom: 4px;
             span.pa-block {
                 font-size: 12px;
@@ -177,6 +182,9 @@
             text-align: center;
             text-transform: uppercase;
             background-color: $white;
+            &:hover {
+                text-decoration: underline;
+            }
         }
         span {
             font-size: 30px;

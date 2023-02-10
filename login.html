@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Quantum portal login page.">
+    <meta name="keywords" content="Login, Quantum, Quantum login">
     <title>Login-Quantum</title>
     <link
       rel="preload"
@@ -34,7 +36,7 @@
           </h3>
 
           <form action="">
-            <div class="form-group">
+            <div class="form-group radio-ip-line">
               <input
                 type="radio"
                 name="schoolType"
@@ -51,7 +53,7 @@
               <label for="independentSchool">Independent school</label>
             </div>
 
-            <div class="form-group">
+            <div id="state-ip-group" class="form-group">
               <label class="small-label" for="state">State*</label>
               <select name="state" id="state">
                 <option value="a">Alabama</option>
@@ -61,8 +63,8 @@
                 <option value="e">e</option>
               </select>
             </div>
-            <div class="form-group">
-              <label class="small-label" for="district-dropdown"
+            <div id="district-ip-group" class="form-group">
+              <label id="dist-label" class="small-label" for="district-dropdown"
                 >District*</label
               >
               <select name="district" id="district-dropdown">
@@ -82,7 +84,7 @@
                 id="username"
                 placeholder="Username/Email ID*"
               />
-              <a href=""><small>FORGOT USERNAME?</small></a>
+              <a href="#forgotUsername"><small>FORGOT USERNAME?</small></a>
             </div>
             <div class="form-group">
               <input
@@ -92,10 +94,11 @@
                 id="password"
                 placeholder="Password*"
               />
-              <a href=""><small>FORGOT PASSWORD?</small></a>
+              <img id="password-visibility-icon" src="/quantum-screen-assets/icons/eye_view.svg" alt="eye icon to view password">
+              <a href="#forgotPassword"><small>FORGOT PASSWORD?</small></a>
             </div>
 
-            <div class="form-group">
+            <div class="form-group radio-ip-line" id="remember-me-line">
               <input type="checkbox" name="remember" id="remember" />
               <label for="remember">Remember Me</label>
             </div>
@@ -122,5 +125,7 @@
         </div>
       </div>
     </div>
+
+    <script src="/scripts/login.js"></script>
   </body>
 </html>

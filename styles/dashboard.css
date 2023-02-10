@@ -11,6 +11,10 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 *:focus {
   outline: none;
 }
@@ -37,10 +41,12 @@ body {
 }
 
 .header {
-  height: 40px;
+  box-sizing: border-box;
+  height: 58px;
   border-bottom: none;
   background-color: #25313F;
-  padding: 10px 15px;
+  padding: 10px 24px;
+  border-bottom: 2px solid #3AC7EC;
 }
 .header .header-img {
   height: 100%;
@@ -242,10 +248,8 @@ a.active {
 }
 
 .hover-container {
-  transition: opacity 0.5s ease-out;
+  transition: all 0.3s ease-out;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
-  opacity: 0;
-  visibility: hidden;
   z-index: 10;
   box-sizing: border-box;
   position: absolute;
@@ -255,7 +259,7 @@ a.active {
   top: 63px;
   right: 5px;
   width: 315px;
-  max-height: 582px;
+  max-height: 0px;
   overflow-y: scroll;
   overflow-x: visible;
 }
@@ -318,7 +322,6 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   bottom: 0;
   right: 0;
@@ -360,7 +363,17 @@ a.active {
   margin-top: 16px;
 }
 
+.body-container {
+  min-height: 100%;
+  position: relative;
+}
+
+.container {
+  padding-bottom: 60px;
+}
+
 .course-container {
+  margin-bottom: 104px;
   max-width: 100%;
   display: grid;
   grid-gap: 24px;
@@ -483,7 +496,9 @@ a.active {
 }
 
 .footer {
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer .upper-footer {
   text-align: center;
@@ -517,6 +532,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#dashboard-header {
+  border: none;
 }
 
 select {
@@ -580,7 +599,7 @@ select {
 }
 
 @media (max-width: 1024px) {
-  .header {
+  #dashboard-header {
     border-bottom: 2px solid #31B9E4;
   }
   .res-navbar {
@@ -626,6 +645,5 @@ select {
   }
 }
 .fixed-nav-item:hover a + .hover-container {
-  opacity: 1;
-  visibility: visible;
+  max-height: 582px;
 }/*# sourceMappingURL=dashboard.css.map */

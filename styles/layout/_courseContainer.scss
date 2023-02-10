@@ -5,7 +5,17 @@
     margin-top: 16px;
 }
 
+.body-container {
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    padding-bottom: 60px;
+}
+
 .course-container {
+    margin-bottom: 104px;
     max-width: 100%;
     // overflow-x: scroll;
     display: grid;

@@ -11,6 +11,10 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 *:focus {
   outline: none;
 }
@@ -37,38 +41,92 @@ body {
 }
 
 .header {
-  height: 40px;
+  box-sizing: border-box;
+  height: 58px;
   border-bottom: none;
   background-color: #25313F;
-  padding: 10px 15px;
+  padding: 10px 24px;
+  border-bottom: 2px solid #3AC7EC;
 }
 .header .header-img {
   height: 100%;
+}
+
+.body-container {
+  min-height: 100%;
+  position: relative;
 }
 
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 60px;
 }
 .login-container .form-container {
+  box-sizing: border-box;
   margin: 50px;
   border-top: 4px solid #3AC7EC;
   width: 488px;
   min-width: 300px;
   padding: 0 32px;
-  background-color: white;
+  background-color: #FFFFFF;
+}
+.login-container .form-container #state-ip-group {
+  margin-top: 23px;
+}
+.login-container .form-container #district-ip-group {
+  margin-top: 36px;
+}
+.login-container .form-container #username {
+  margin-top: 54px;
+}
+.login-container .form-container #password {
+  margin-top: 33px;
+}
+.login-container .form-container #remember-me-line {
+  margin-top: 26px;
 }
 .login-container .form-container h3 {
   font-size: 24px;
+  line-height: 24px;
   text-align: center;
   color: #222222;
+  margin-bottom: 32px;
 }
 .login-container .form-container h3 img {
   float: left;
 }
+.login-container .form-container .radio-ip-line {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.login-container .form-container .radio-ip-line input {
+  margin: 0px 8px 0px 0px;
+}
+.login-container .form-container .radio-ip-line label {
+  margin-right: 32px;
+}
+.login-container .form-container select {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #666666;
+  color: #666666;
+  background: url("../quantum-screen-assets/icons/arrow-down.svg") no-repeat right;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: inherit;
+}
 .login-container .form-container .form-group {
-  margin-top: 35px;
+  position: relative;
+}
+.login-container .form-container .form-group input {
+  font-family: inherit;
 }
 .login-container .form-container .form-group small {
   font-size: 14px;
@@ -94,13 +152,20 @@ body {
   color: #666666;
 }
 .login-container .form-container .form-group .text-ip {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .login-container .form-container .form-group input[type=radio], .login-container .form-container .form-group input[type=checkbox] {
   accent-color: #1F7A54;
   height: 20px;
   width: 20px;
   vertical-align: middle;
+}
+.login-container .form-container .form-group img {
+  cursor: pointer;
+  position: absolute;
+  top: 36px;
+  right: 0px;
+  cursor: pointer;
 }
 .login-container .form-container .login-btn {
   background-color: #3FD28B;
@@ -115,7 +180,9 @@ body {
 }
 
 .footer {
-  margin-top: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer .upper-footer {
   text-align: center;
@@ -142,10 +209,6 @@ body {
 }
 .footer .lower-footer .footer-pipline {
   font-size: 24px;
-}
-
-*:focus {
-  outline: none;
 }
 
 a {

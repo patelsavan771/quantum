@@ -7,11 +7,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #eeeeee;
+  background-color: #EEEEEE;
   box-sizing: border-box;
 }
 
-button {
+button, .cursor-pointer {
   cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ button {
   height: 58px;
   border-bottom: none;
   background-color: #25313F;
-  padding: 10px 24px;
+  padding: 10px 8px 10px 24px;
   border-bottom: 2px solid #3AC7EC;
 }
 .header .header-img {

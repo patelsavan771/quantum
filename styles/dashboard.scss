@@ -63,19 +63,15 @@ select {
     font-family: inherit;
     width: 50%;
     padding: 20px;
-
     img {
         width: 32px;
     }
-
     .bold-num {
         font-size: 24px;
         font-weight: bold;
     }
-
     &:hover {
         opacity: 0.6;
-        cursor: pointer;
     }
 }
 
@@ -83,7 +79,6 @@ select {
     #dashboard-header {
         border-bottom: 2px solid $headerborder;
     }
-
     .res-navbar {
         flex-direction: column;
         position: absolute;
@@ -94,11 +89,9 @@ select {
         background-color: $white;
         text-align: center;
         display: none;
-
         ul {
             margin-block-start: 0;
         }
-
         a {
             color: $greenishColor;
             font-size: 14px;
@@ -112,23 +105,19 @@ select {
             }
         }
     }
-
     .nav-toggle-label {
         cursor: pointer;
         display: block;
     }
-
     #hamburger-menu-div {
         display: initial;
     }
-
     // .nav-toggle:checked+.res-navbar {
     //     display: block;
     //     z-index: 5;
     //     margin: 0;
     //     padding: 0;
     // }
-
     .course-container {
         display: grid;
         grid-gap: 24px;
@@ -141,12 +130,10 @@ select {
     }
 }
 
-
 .fixed-nav-item:hover a+.hover-container {
     // transition: all 1s;
     // display: block;
     // opacity: 1;
     // visibility: visible;
     max-height: 582px;
-
 }

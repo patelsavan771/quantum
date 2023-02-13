@@ -7,11 +7,11 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-color: #eeeeee;
+  background-color: #EEEEEE;
   box-sizing: border-box;
 }
 
-button {
+button, .cursor-pointer {
   cursor: pointer;
 }
 
@@ -45,7 +45,7 @@ button {
   height: 58px;
   border-bottom: none;
   background-color: #25313F;
-  padding: 10px 24px;
+  padding: 10px 8px 10px 24px;
   border-bottom: 2px solid #3AC7EC;
 }
 .header .header-img {
@@ -160,11 +160,11 @@ a.active {
   align-items: center;
 }
 .other-func .sortby-func #sortby-select {
+  width: 170px;
   display: inline-block;
   background-color: #EEEEEE;
   height: 20px;
-  padding: 0;
-  padding-bottom: 4px;
+  padding: 0px 0px 2px 6px;
   font-size: 16px;
   color: #333333;
   font-family: "Quicksand";
@@ -183,6 +183,7 @@ a.active {
 }
 
 #hamburger-container {
+  transition: all 0.5s ease-out;
   box-shadow: 0px 13px 20px rgba(0, 0, 0, 0.2392156863);
   height: auto;
   overflow: hidden;
@@ -240,6 +241,9 @@ a.active {
 }
 #hamburger-container #new-res-navbar-id .sub-menu ul li:hover {
   text-decoration: underline;
+}
+#hamburger-container #new-res-navbar-id .opened-submenu {
+  display: block;
 }
 
 .fixed-nav-item {
@@ -595,7 +599,6 @@ select {
 }
 .nav-toggle-item:hover {
   opacity: 0.6;
-  cursor: pointer;
 }
 
 @media (max-width: 1024px) {

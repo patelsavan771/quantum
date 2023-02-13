@@ -37,7 +37,6 @@
         padding: 24px 24px 0px;
         box-sizing: border-box;
         
-        
         .expired{
             position: absolute;
             top: 0;
@@ -63,10 +62,7 @@
                 overflow: hidden;
                 color: $gray22;
                 .fav-span {
-                    float: right;
                     margin: 0;
-                    top: 0;
-                    right: 0;
                 }
                 .not-fav {
                     opacity: 0.2;
@@ -106,7 +102,6 @@
             img {
                 height: 24px;
             }
-
             .card-footer-btn {
                 margin: 0;
                 padding: 0;
@@ -127,7 +122,6 @@
         }
     }
 }
-
 .course-card-text-mp {
     padding: 0;
     margin: 0;
@@ -135,7 +129,6 @@
     margin-bottom: 8px;
     color: $gray66;
 }
-
 .multine-ellipsis {
     -webkit-box-orient: vertical;
     display: -webkit-inline-box;
@@ -144,6 +137,3 @@
     text-overflow: ellipsis;
     white-space: normal;
 }
-
-
-

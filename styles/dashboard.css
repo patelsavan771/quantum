@@ -424,10 +424,7 @@ a.active {
   color: #222222;
 }
 .course-container .course-card .course-body .card-title .fav-span {
-  float: right;
   margin: 0;
-  top: 0;
-  right: 0;
 }
 .course-container .course-card .course-body .card-title .not-fav {
   opacity: 0.2;
